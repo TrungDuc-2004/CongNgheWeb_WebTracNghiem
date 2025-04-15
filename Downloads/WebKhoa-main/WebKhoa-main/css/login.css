@@ -1,0 +1,137 @@
+/* Cải tiến font chữ và kích thước cho các trường */
+body {
+    font-family: 'Roboto', sans-serif;  /* Font đẹp */
+    background-color: rgb(184, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Ẩn thanh cuộn khi sử dụng hiệu ứng */
+}
+
+.container {
+    background-color: white;
+    width: 450px; /* Giảm kích thước */
+    padding: 20px; /* Giảm khoảng cách */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Giảm bóng đổ */
+    text-align: center;
+    border-radius: 5px; /* Giảm độ bo tròn */
+    transform: translateY(-30px); /* Giảm dịch chuyển */
+    animation: fadeIn 0.8s ease-out forwards; /* Rút ngắn thời gian animation */
+}
+
+/* Logo */
+.logo img {
+    width: 200px; /* Giảm kích thước */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề */
+h2, h3 {
+    font: Verdana;
+    margin: 8px 0; /* Giảm khoảng cách */
+    color: #333;
+}
+
+h2 {
+    font-size: 18px; /* Giảm kích thước chữ */
+    font-weight: bold;
+    color: #333;
+}
+
+h3 {
+    font-size: 16px; /* Giảm kích thước chữ */
+    color: #777;
+}
+
+/* Form đăng nhập */
+form {
+    margin-top: 30px; /* Giảm khoảng cách */
+}
+
+/* Label cho username, password */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px; /* Giảm khoảng cách */
+    font-size: 14px; /* Giảm kích thước chữ */
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out; /* Mượt mà hơn khi hover */
+}
+
+/* Input cho username, password */
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 12px; /* Giảm padding */
+    margin-bottom: 20px; /* Giảm khoảng cách */
+    border: 1px solid #ddd; /* Giảm độ dày border */
+    border-radius: 5px; /* Giảm độ bo tròn */
+    font-size: 14px; /* Giảm kích thước chữ */
+    background-color: #fafafa;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Easing mượt mà hơn */
+    font: Verdana;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4); /* Giảm bóng */
+}
+
+/* Button đăng nhập */
+button {
+    width: 100%;
+    padding: 10px; /* Giảm padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Giảm độ bo tròn */
+    font-size: 16px; /* Giảm kích thước chữ */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà cho nút */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Nâng nút mượt mà hơn */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Hiệu ứng bóng đổ cho nút */
+}
+
+button:active {
+    transform: translateY(1px); /* Hiệu ứng khi nhấn nút */
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.2); /* Bóng khi nhấn */
+}
+
+/* Hiệu ứng text cho Quên mật khẩu */
+p {
+    margin-top: 8px; /* Giảm khoảng cách */
+    font-size: 14px; /* Giảm kích thước chữ */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px; /* Giảm kích thước chữ */
+    transition: color 0.3s ease-in-out; /* Mượt mà khi hover */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Animation cho form */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px); /* Giảm khoảng cách dịch chuyển */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

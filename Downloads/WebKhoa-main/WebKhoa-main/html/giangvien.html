@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="../css/giangvien.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#" class="active" onclick="showContent('home')">
+                    <img src="../img/home.png" alt="Home Icon"> Trang chủ
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showContent('profile')">
+                    <img src="../img/profile.png" alt="Profile Icon"> Thông tin cá nhân
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showContent('notifications')">
+                    <img src="../img/notifications.png" alt="Notifications Icon"> Thông báo
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showContent('students')">
+                    <img src="../img/students.png" alt="Students Icon"> Quản lý sinh viên
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showContent('classes')">
+                    <img src="../img/classes.png" alt="Classes Icon"> Quản lý lớp học
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="#">BIỂU MẪU</a></li>
+                    <li><a href="#">THÔNG BÁO CHUNG</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button class="search-btn">
+                        <img src="../img/search.png" alt="Search Icon">
+                    </button>
+                </div>
+                <button class="logout-btn">Đăng xuất</button>
+            </div>
+        </header>
+
+                    <!-- Nội dung chỉ hiển thị ở trang chủ -->
+            <div id="home" class="content-section active">
+                <div class="poster">
+                    <img src="../img/poster.png" alt="Poster">
+                </div>
+
+                <!-- Banner Section -->
+                <div class="banner">
+                    <img src="../img/banner.jpg" alt="Banner">
+                </div>
+
+                <!-- Nội dung bài viết -->
+                <div class="Noidung">
+                    <p>THÂN MỜI ĐẾN CỔ VŨ ĐOÀN NGHỆ THUẬT KHOA CÔNG NGHỆ THÔNG TIN</p>
+                    <p>Tiếp nối truyền thống các năm học, tại Liên hoan Tiếng hát Sinh viên Trường Đại học Sư phạm TP.HCM năm 2024, Đoàn Nghệ thuật khoa Công nghệ Thông tin tiếp tục chinh chiến với bảng chương trình bằng những tiết mục vô cùng đặc sắc, 25 “mảnh ghép” đang vô cùng háo hức được thể hiện tài năng và thành quả của hơn 1 tháng tập luyện vừa qua.</p>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer-info">
+                            <h3>Khoa Công nghệ Thông tin</h3>
+                            <p>Địa chỉ: Phòng B507, 280 An Dương Vương, P.4, Q.5, TP.HCM</p>
+                            <p>Số điện thoại: 028 38352020</p>
+                            <p>Email: khoacntt@hcmue.edu.vn</p>
+                        </div>
+                        <div class="footer-links">
+                            <h3>Liên kết</h3>
+                            <p><a href="https://hcmue.edu.vn/vi/">Trường Đại học Sư phạm TP.HCM</a></p>
+                            <p><a href="https://online.hcmue.edu.vn/">Trang online sinh viên</a></p>
+                        </div>
+                    </div>
+                    <p class="copyright">© 2021 Trường Đại học Sư phạm TP.HCM - Khoa Công nghệ Thông tin</p>
+                </footer>
+            </div>
+
+
+        <!-- Profile Section for Thông tin cá nhân -->
+        <div id="profile" class="content-section">
+            <h2>Thông tin cá nhân</h2>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="../img/user.png" alt="Profile" class="profile-image">
+                    <div class="profile-name">
+                        <h3>Tên giảng viên</h3>
+                        <p>Giảng viên</p>
+                    </div>
+                </div>
+                <div class="profile-details">
+                    <table>
+                        <tr>
+                            <td><strong>Mã giảng viên</strong></td>
+                            <td>48.01.104.000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phone</strong></td>
+                            <td>+12 345 6789 0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td>@teacher.hcmue.edu.vn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Họ tên</strong></td>
+                            <td>Họ tên</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Giới tính</strong></td>
+                            <td>Nam/Nữ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Môn giảng dạy</strong></td>
+                            <td>Môn</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="notifications" class="content-section">
+            <h2>Thông báo</h2>
+            <!-- Content for Thông báo -->
+            <div class="notification-box">
+                <div class="notification-item">
+                    <div class="notification-header">
+                        <h3>Thông báo</h3>
+                        <span class="notification-date">Thu Mar 07, 2024</span>
+                    </div>
+                    <div class="notification-body">
+                        <textarea placeholder="Viết bài đăng mới..." rows="3"></textarea>
+                    </div>
+                    <div class="notification-footer">
+                        <label for="audience">Tới</label>
+                        <select id="audience" name="audience">
+                            <option value="chung">Chung</option>
+                            <option value="lopcntta">Lớp CNTT.A</option>
+                            <option value="lopcnttb">Lớp CNTT.B</option>
+                        </select>
+                        <button class="post-button">Đăng</button>
+                    </div>
+                </div>
+        
+                <div class="notification-item">
+                    <div class="notification-header">
+                        <h3>Thông báo</h3>
+                        <span class="notification-date">Thu Mar 07, 2024</span>
+                    </div>
+                    <div class="notification-body">
+                        <textarea placeholder="Viết bài đăng mới..." rows="3"></textarea>
+                    </div>
+                    <div class="notification-footer">
+                        <label for="audience">Tới</label>
+                        <select id="audience" name="audience">
+                            <option value="chung">Chung</option>
+                            <option value="lopcntta">Lớp CNTT.A</option>
+                            <option value="lopcnttb">Lớp CNTT.B</option>
+                        </select>
+                        <button class="post-button">Đăng</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="news">
+                <h3>TIN TỨC MỚI NHẤT</h3>
+                <ul>
+                    <li><a href="#">Thông báo mới nhất từ khoa</a></li>
+                    <li><a href="#">Thông báo việc ra soát số tín chỉ học kỳ II, năm học 2023-2024</a></li>
+                    <li><a href="#">Danh sách sinh viên tốt nghiệp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="students" class="content-section">
+            <h2>Quản lý sinh viên</h2>
+            <!-- Content for Quản lý sinh viên -->
+             <!-- Search and Add controls -->
+    <div class="controls">
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm" class="search-input">
+            <button class="search-button">
+                <img src="../img/search.png" alt="Search">
+            </button>
+        </div>
+        <div class="add-controls">
+            <select>
+                <option value="add-class">Thêm lớp</option>
+                <option value="add-student">Thêm sinh viên</option>
+            </select>
+            <button class="add-button">+</button>
+        </div>
+    </div>
+
+    <!-- Student Table -->
+    <table class="student-table">
+        <thead>
+            <tr>
+                <th>Tên sinh viên</th>
+                <th>Mssv</th>
+                <th>Ngày sinh</th>
+                <th>Lớp</th>
+                <th>Liên hệ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Họ tên sinh viên</td>
+                <td>48.01.104.000</td>
+                <td>31/2/2004</td>
+                <td>CNNT.A</td>
+                <td>
+                    <a href="tel:+1234567890"><img src="../img/phone.png" alt="Phone"></a>
+                    <a href="mailto:student@example.com"><img src="../img/email.png" alt="Email"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>Họ tên sinh viên</td>
+                <td>48.01.104.001</td>
+                <td>31/2/2004</td>
+                <td>CNNT.C</td>
+                <td>
+                    <a href="tel:+1234567890"><img src="../img/phone.png" alt="Phone"></a>
+                    <a href="mailto:student@example.com"><img src="../img/email.png" alt="Email"></a>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="pagination-button">&laquo;</button>
+        <button class="pagination-button">1</button>
+        <button class="pagination-button">2</button>
+        <button class="pagination-button">3</button>
+        <button class="pagination-button">&raquo;</button>
+    </div>
+
+        </div>
+        <div id="classes" class="content-section">
+            <h2>Lịch Dạy Học Kỳ 1 (Tháng 9 - Tháng 12, 2024)</h2>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button class="prev-month">❮</button>
+                    <h3>Tháng 9, 2024</h3>
+                    <button class="next-month">❯</button>
+                </div>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Thứ Hai</th>
+                            <th>Thứ Ba</th>
+                            <th>Thứ Tư</th>
+                            <th>Thứ Năm</th>
+                            <th>Thứ Sáu</th>
+                            <th>Thứ Bảy</th>
+                            <th>Chủ Nhật</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Tháng 9 -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>1<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>2<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>3<br><span class="event">Học máy</span></td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>7</td>
+                            <td>8<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>9</td>
+                            <td>10<br><span class="event">Học máy</span></td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>14</td>
+                            <td>15<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>16</td>
+                            <td>17<br><span class="event">Học máy</span></td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <!-- Tháng 10 -->
+                        <tr>
+                            <td>20<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>21</td>
+                            <td>22<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>23</td>
+                            <td>24<br><span class="event">Học máy</span></td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>28</td>
+                            <td>29<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>30</td>
+                            <td>31<br><span class="event">Học máy</span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!-- Tháng 11 -->
+                        <tr>
+                            <td>1<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>2<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5<br><span class="event">Học máy</span></td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>9</td>
+                            <td>10<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>11</td>
+                            <td>12<br><span class="event">Học máy</span></td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>16</td>
+                            <td>17<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>18</td>
+                            <td>19<br><span class="event">Học máy</span></td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <!-- Tháng 12 -->
+                        <tr>
+                            <td>22<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>23</td>
+                            <td>24<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td>25</td>
+                            <td>26<br><span class="event">Học máy</span></td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29<br><span class="event">Trí tuệ nhân tạo</span></td>
+                            <td>30</td>
+                            <td>31<br><span class="event">Công nghệ phần mềm</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../js/giangvien.js"></script>
+</body>
+</html>
