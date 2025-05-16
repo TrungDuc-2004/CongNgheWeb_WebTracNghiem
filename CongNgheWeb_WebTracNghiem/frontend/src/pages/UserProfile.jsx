@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar2 from "./Navbar2"; // Đảm bảo đường dẫn đúng nếu Navbar2 cũng ở src/pages
+import Navbar2 from "./NavbarHS"; // Đảm bảo đường dẫn đúng nếu Navbar2 cũng ở src/pages
 import Footer from "./Footer";   // Đảm bảo đường dẫn đúng
 import "./UserProfile.css";     // Đảm bảo đường dẫn đúng
 import { Link, useNavigate } from "react-router-dom";

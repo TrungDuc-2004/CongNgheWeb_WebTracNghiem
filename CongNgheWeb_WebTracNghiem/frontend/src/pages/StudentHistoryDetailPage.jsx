@@ -1,7 +1,7 @@
 // frontend/src/pages/StudentHistoryDetailPage.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Navbar2 from './Navbar2';
+import Navbar2 from './NavbarHS';
 import Footer from './Footer';
 import './StudentHistoryDetailPage.css'; 
 import { toast } from 'react-toastify';

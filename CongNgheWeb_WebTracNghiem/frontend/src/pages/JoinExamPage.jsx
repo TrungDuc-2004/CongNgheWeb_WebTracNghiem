@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./JoinPage.css";
-import Navbar2 from "./Navbar2";
+import "./JoinExamPage.css";
+import Navbar2 from "./NavbarHS";
 import bgImage from "../assets/bg1.png";
 import Footer from "./Footer";
 import axios from "axios";
 
-function JoinPage() {
+function JoinExamPage() {
   const [code, setCode] = useState("");
   const navigate = useNavigate();
 
@@ -117,4 +117,4 @@ function JoinPage() {
   );
 }
 
-export default JoinPage;
+export default JoinExamPage;

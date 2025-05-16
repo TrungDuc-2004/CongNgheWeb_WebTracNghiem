@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import bgImage from "../assets/bg.png";
-import Navbar from "./Navbar";
+import PublicNavbar from "./PublicNavbar";
 import ProcessSection from "./ProcessSection";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
+      <PublicNavbar />
       <div className="homepage">
         <img src={bgImage} alt="background" className="background-image" />
         <main className="main-content">

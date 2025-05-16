@@ -1,7 +1,7 @@
 // frontend/src/pages/QuizPage.jsx
 import React, { useState, useEffect, useRef } from "react";
 import "./QuizPage.css"; // Đảm bảo bạn có file CSS này và import nó
-import Navbar2 from "./Navbar2"; // Giả sử Navbar2.jsx nằm cùng cấp trong src/pages
+import Navbar2 from "./NavbarHS"; // Giả sử Navbar2.jsx nằm cùng cấp trong src/pages
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from 'react-toastify';

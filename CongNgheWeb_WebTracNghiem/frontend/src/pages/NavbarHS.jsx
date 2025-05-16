@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom"; 
-import "./Navbar.css";                             
+import "./PublicNavbar.css";                             
 import userIconDefault from "../assets/user.png";    
 import logoutIcon from "../assets/logout.png";      
 // import historyIcon from "../assets/history.png"; // << Bỏ comment nếu muốn dùng icon Lịch sử
 
-const Navbar = () => {
+const PublicNavbar = () => {
   const navigate = useNavigate(); 
   const user = JSON.parse(localStorage.getItem("user"));
 
@@ -17,9 +17,9 @@ const Navbar = () => {
   }
 
   const handleLogoutClick = () => {
-    console.log('[Navbar Student] Logout link/button clicked.');
+    console.log('[PublicNavbar Student] Logout link/button clicked.');
     localStorage.removeItem('user');
-    console.log('[Navbar Student] User removed from localStorage. Link will navigate to /login.');
+    console.log('[PublicNavbar Student] User removed from localStorage. Link will navigate to /login.');
   };
 
   return (
@@ -46,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default PublicNavbar;

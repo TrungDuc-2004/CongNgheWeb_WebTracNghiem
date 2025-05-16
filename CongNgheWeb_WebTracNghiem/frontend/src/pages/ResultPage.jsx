@@ -1,6 +1,6 @@
 import React from "react";
 import "./ResultPage.css";
-import Navbar2 from "./Navbar2";
+import Navbar2 from "./NavbarHS";
 import Footer from "./Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import bgImage from "../assets/bg3.png";

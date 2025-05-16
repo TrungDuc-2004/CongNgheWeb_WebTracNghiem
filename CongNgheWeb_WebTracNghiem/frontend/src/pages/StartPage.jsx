@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./StartPage.css";
 import bgImage from "../assets/bg2.png";
-import Navbar2 from "./Navbar2";
+import Navbar2 from "./NavbarHS";
 import Footer from "./Footer";
 
 function StartPage() {

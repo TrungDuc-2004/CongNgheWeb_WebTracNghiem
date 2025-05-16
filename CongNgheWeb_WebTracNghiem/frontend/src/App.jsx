@@ -5,10 +5,10 @@ import { ToastContainer } from 'react-toastify'; // << IMPORT
 import 'react-toastify/dist/ReactToastify.css';  // << IMPORT
 
 import HomePage from "./pages/HomePage";
-import LoginForm from "./pages/LoginForm";
+import LoginPage from "./pages/LoginPage";
 import Register from "./pages/Register";
 import RegisterPage from "./pages/RegisterPage";
-import JoinPage from "./pages/JoinPage";
+import JoinExamPage from "./pages/JoinExamPage";
 import StartPage from "./pages/StartPage";
 import ResultPage from "./pages/ResultPage";
 import QuizPage from "./pages/QuizPage";
@@ -46,7 +46,7 @@ function App() {
       <Routes>
         {/* Các trang công khai */}
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginForm />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/register/:role" element={<Register />} />
         <Route path="/registerpage" element={<RegisterPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
@@ -56,7 +56,7 @@ function App() {
         <Route path="/create-test" element={<ProtectedRoute><CreateTestScreen /></ProtectedRoute>} />
         <Route path="/review-test/:examId" element={<ProtectedRoute><ReviewTestScreen /></ProtectedRoute>} />
         <Route path="/resulttest/:examId" element={<ProtectedRoute><TestResultScreen /></ProtectedRoute>} />
-        <Route path="/student-dashboard" element={<ProtectedRoute><JoinPage /></ProtectedRoute>} />
+        <Route path="/student-dashboard" element={<ProtectedRoute><JoinExamPage /></ProtectedRoute>} />
         <Route path="/start-page" element={<ProtectedRoute><StartPage /></ProtectedRoute>} />
         <Route path="/quiz" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
         <Route path="/teacher-dashboard" element={<ProtectedRoute><ExamListScreen /></ProtectedRoute>} />

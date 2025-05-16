@@ -1,7 +1,7 @@
 // frontend/src/pages/StudentHistoryPage.jsx
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Navbar2 from './Navbar2'; // Đảm bảo Navbar2.jsx ở cùng thư mục src/pages
+import Navbar2 from './NavbarHS'; // Đảm bảo Navbar2.jsx ở cùng thư mục src/pages
 import Footer from './Footer';   // Đảm bảo Footer.jsx ở cùng thư mục src/pages
 import './StudentHistoryPage.css'; 
 import { toast } from 'react-toastify';

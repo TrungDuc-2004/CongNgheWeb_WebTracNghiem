@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./PublicNavbar.css";
 // chưa login
-const Navbar = () => {
+const PublicNavbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-content">
@@ -20,4 +20,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default PublicNavbar;
