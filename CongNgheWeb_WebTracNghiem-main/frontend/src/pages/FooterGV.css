@@ -1,0 +1,12 @@
+.footerGV {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #9CD3D9 100%); 
+  padding: 20px;
+  border-top: 1px solid #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  max-width: 12000px;
+  margin: 0px auto 0;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+}

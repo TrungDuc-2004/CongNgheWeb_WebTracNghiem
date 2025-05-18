@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #9CD3D9 100%);
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 120%;
+  height: 40%;
+  background: rgba(156, 211, 217, 0.4);
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.register-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.title1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #022E40; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.teacher-btn, .student-btn {
+  padding: 70px 65px;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-btn::before, .student-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.teacher-btn:hover::before, .student-btn:hover::before {
+  opacity: 1;
+}
+
+.teacher-btn {
+  background-color: #022E40; 
+  color: white;
+}
+
+.student-btn {
+  background-color: #FEC2B2; 
+  color: #022E40;
+}
+
+.teacher-btn:hover {
+  transform: translateY(-5px);
+}
+
+.student-btn:hover {
+  transform: translateY(-5px);
+}

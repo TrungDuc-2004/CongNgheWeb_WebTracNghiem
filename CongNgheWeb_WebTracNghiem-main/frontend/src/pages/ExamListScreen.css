@@ -1,0 +1,132 @@
+:root {
+  --primary-pink: #9CD3D9;
+  --primary-dark: #022E40;
+}
+
+.exam-list-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #9CD3D9 100%); 
+}
+
+.exam-list {
+  flex-grow: 1;
+  padding: 120px;
+}
+
+.exam-item {
+  background: #fff;
+  border-left: 4px solid var(--primary-dark);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.exam-info p {
+  margin: 0;
+  color: var(--primary-dark);
+}
+
+.delete-button {
+  background-color: var(--primary-pink);
+  color: var(--primary-dark);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-button:hover {
+  background-color: rgba(156, 211, 217, 0.8);
+}
+
+.create-button {
+  background-color: var(--primary-dark);
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+.create-button:hover {
+  filter: brightness(110%);
+}
+
+.Toastify__toast-container {
+  width: 100%;
+  max-width: 500px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--primary-dark);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px 24px;
+}
+
+.Toastify__toast--success {
+  border-left: 4px solid var(--primary-dark);
+}
+
+.Toastify__toast--error {
+  border-left: 4px solid var(--primary-pink);
+}
+
+.Toastify__toast--info {
+  border-left: 4px solid var(--primary-dark);
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(to right, var(--primary-pink), #FEE9D0);
+  height: 3px;
+}
+
+.Toastify__close-button {
+  color: var(--primary-pink);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
+.confirm-dialog-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.confirm-button {
+  padding: 8px 14px;
+  background: var(--primary-dark);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  padding: 8px 14px;
+  background: var(--primary-pink);
+  color: var(--primary-dark);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
